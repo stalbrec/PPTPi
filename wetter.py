@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import python_weather
 import asyncio
 import os,csv, datetime, json
@@ -66,19 +67,20 @@ class WetterStation(object):
             row = {f"{origin}_{variable}":self.current_records[origin][variable] for origin in self.current_records.keys() for variable in self.current_records[origin].keys()}
             writer.writerow(row)
             
-    def update(self):
-        #self.sense.show_message("Update:")
+    def update(self,sleep=5):
         self.sense.show_letter("!",(255,0,0),(255,255,255))
-        time.sleep(1)
-        self.sense.clear()
+
         self.update_pyweather()
         self.update_sense_hat()
         self.update_json()
         self.update_csv()
         
-        #self.sense.show_message(f"T={self.current_records['pyweather']['Temperatur']}/{self.current_records['sense_hat']['Temperatur']} C")
-        #print("Update:")
         print(json.dumps(self.current_records,indent=2))
+
+        alert_duration = 3
+        time.sleep(alert_duration)
+        self.sense.clear()
+        time.sleep(max(0,update_interval-alert_duration))
 
 if(__name__ == '__main__'):
     import time
@@ -88,5 +90,5 @@ if(__name__ == '__main__'):
     update_interval = 60 #seconds
     
     while True:
-        ws.update()
-        time.sleep(update_interval)
+        ws.update(sleep=update_interval)
+        
