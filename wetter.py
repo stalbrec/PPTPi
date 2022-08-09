@@ -36,7 +36,6 @@ class WetterStation(object):
             'Temperatur_felt':self.pyweather.current.feels_like,
             'rel_Luftfeuchtigkeit':self.pyweather.current.humidity,
             'Himmelbeschreibung':self.pyweather.current.sky_text,
-            'Windgeschwindigkeit':self.pyweather.current.wind_speed
             }
 
 
