@@ -16,11 +16,9 @@ Material und Beispiele rund um das Projekt Raspberry Pi im Rahmen der [Physik-Pr
 
 ## Python-Umgebung aufsetzen
 
-Erstelle Umgebung mit `venv` und installiere Pakete
+Fuehre Updates aus, installiere einige packages und erstelle Umgebung mit `venv` und installiere mehr packages (u.a. jupyter, numpy, etc.) mit
 
 ```
-python3 -m venv ~/PPT-env
-source ~/PPT-env/bin/activate
-pip install -r requirements.txt
+source setup.sh
 ```
 
