@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #update and upgrade system
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 
 #install scipy and its dependencies
-sudo apt-get install python-scipy libatlas-base-dev
+sudo apt-get install python-scipy libatlas-base-dev -y
 
 #create python3 venv to be able to easily install jupyter 
 #and other packages used in the project
