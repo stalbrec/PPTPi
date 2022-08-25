@@ -10,8 +10,8 @@ class TemperaturSensoren():
 	
 	def __init__(self):
 		#setup 1-wire sensors
-		os.system('modprobe w1-gpio')
-		os.system('modprobe w1-therm')
+		os.system('sudo modprobe w1-gpio')
+		os.system('sudo modprobe w1-therm')
 		
 		self._w1_dir = '/sys/bus/w1/devices/'
 		devices_dirs = glob.glob(self._w1_dir+'/28*')
