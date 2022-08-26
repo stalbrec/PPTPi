@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Dashboard</title>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div id="forecast-left">
+      <h2><div>  Raum </div></h2> 
+      <div id='Temperatur_sensor'>n/a</div>
+    </div>
+
+    <div id="forecast-right">
+      <h2><div id='Ort'>n/a</div></h2>
+      <div id='Temperatur_pyweather'>n/a</div>
+    </div>
+
+
+
+  </body>
+  <script>
+    window.addEventListener("load",function() {
+      let interval = setInterval(update, 500);
+    });
+  </script>
+</html>

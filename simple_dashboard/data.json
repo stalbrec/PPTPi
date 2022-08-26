@@ -1,0 +1,10 @@
+[{
+  "sensehat":{
+    "Temperatur_sensor":32.6,
+    "location":"Hamburg"
+  },
+  "pyweather":{
+    "Temperatur":40,
+    "location":"Hamburg"
+  }
+ }]
