@@ -1,16 +1,64 @@
+
+
 body {
-    background-color: grey;
+    background-color: #48392a;
+    height:80vh;
 }
 
+/*Hamburg*/
 #forecast-right {
-    width:40%;
-    height:auto;
-    Background-color:green;
+    float: right;
+    height:90%;
+    width: 35%;
+    Background-color:#adc698;
+    display: block;
+    padding:5%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/*Raum*/
+#forecast-left {
+    float: left;
+    display: block;
+    width:35%;
+    height:90%;
+    Background-color:#c06e52;
+    padding:5%;
+    text-align: center;
+    border: 1px solid black;
     
 }
 
-#forecast-left {
-    width:40%;
-    height:auto;
-    Background-color:red;
+/*Hamburg-full*/
+#forecast-online {
+    float: center;
+    display: block;
+    width:98%;
+    height:95vh;
+    Background-color:#adc698;
+    padding:1%;
+    padding-right: 1%;
+    text-align: center;
+    border: 1px solid white;
+    
+}
+
+/*Raum-full*/
+#forecast-raum {
+    float: center;
+    display: block;
+    width:98%;
+    height:95vh;
+    Background-color:#c06e52;
+    padding:1%;
+    padding-right: 1%;
+    text-align: center;
+    border: 1px solid white;
+    
+}
+img.plot{
+    float: center;
+    /*width: 70%;*/
+    height: 60vh;
 }

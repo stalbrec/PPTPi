@@ -1,6 +1,6 @@
 [{
   "sensehat":{
-    "Temperatur_sensor":32.6,
+    "Temperatur_sensor":32.8,
     "location":"Hamburg"
   },
   "pyweather":{

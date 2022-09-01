@@ -1,0 +1,20 @@
+[
+  {
+    "pyweather": {
+      "Zeitpunkt": "2022-08-27_14:20:00",
+      "Temperatur": 19,
+      "Temperatur_felt": 19,
+      "rel_Luftfeuchtigkeit_py": 78
+    },
+    "sense_hat": {
+      "Zeitpunkt": "2022-08-27_15:14:24",
+      "Temperatur": 28.11,
+      "Temperatur_hum": 28.11,
+      "Temperatur_pres": 27.75,
+      "Temperatur_cpu": 48.7,
+      "Luftdruck": 1015.99,
+      "rel_Luftfeuchtigkeit": 52.68,
+      "Temperatur_sensor": 26.75
+    }
+  }
+]

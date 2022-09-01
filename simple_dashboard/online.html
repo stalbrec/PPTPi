@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cool Dashboard</title>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="forecast-online" onclick="location.href='index.html';">
+      <h2><div id='Ort'>Hamburg</div></h2>
+      <p id='Temperatur_pyweather'>n/a</p>
+      <p id='rel_Luftfeuchtigkeit_py'>n/a</p>
+      <div id='plot'><img class='plot' src="Temperatur_online.png"></div>
+    </div>
+
+  </body>
+  <script>
+    window.addEventListener("load",function() {
+      let interval = setInterval(update_online, 500);
+    });
+  </script>
+</html>

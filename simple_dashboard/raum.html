@@ -7,21 +7,17 @@
     <link href='styles.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-
-    <div id="forecast-left" onclick="location.href='raum.html';">
+    <div id="forecast-raum" onclick="location.href='index.html';">
       <h2><div>  Raum </div></h2> 
-      <div id='Temperatur_sensor'>n/a</div>
-    </div>
-
-    <div id="forecast-right" onclick="location.href='online.html';">
-      <h2><div id='Ort'>Hamburg</div></h2>
-      <div id='Temperatur_pyweather'>n/a</div>
+      <p id='Temperatur_sensor'>n/a</p>
+      <p id='rel_Luftfeuchtigkeit'>n/a</p>
+      <div id='plot'><img class='plot' src="Temperatur_Raum.png"></div>
     </div>
 
   </body>
   <script>
     window.addEventListener("load",function() {
-      let interval = setInterval(update, 500);
+      let interval = setInterval(update_raum, 500);
     });
   </script>
 </html>
